@@ -14,7 +14,6 @@ public class PathTests {
 
     @Test
     public void shouldGetDoublePath() {
-        //URLDecompositor urlDecompositor = new URLDecompositor("http://test.tdd/a/path/here/testing/tdd/hey/you/");
         URLDecompositor urlDecompositor = new URLDecompositor("http://test.tdd/abc/123");
         assertEquals("abc/123", urlDecompositor.getPath());
     }
