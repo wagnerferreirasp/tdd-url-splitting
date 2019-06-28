@@ -20,6 +20,12 @@ public class PathTests {
     }
 
     @Test
+    public void shouldGetComplexPath() {
+        URLDecompositor urlDecompositor = new URLDecompositor("http://test.tdd/a/path/here/testing/tdd/hey/you/");
+        assertEquals("a/path/here/testing/tdd/hey/you/", urlDecompositor.getPath());
+    }
+
+    @Test
     public void noPath_ShouldBeEmptyString() {
         URLDecompositor urlDecompositor = new URLDecompositor("http://test.tdd");
         assertEquals("", urlDecompositor.getPath());
